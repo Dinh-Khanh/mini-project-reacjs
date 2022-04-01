@@ -1,0 +1,17 @@
+.add-todo {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  .todo-input {
+    height: 32px;
+    width: 250px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 20px;
+    padding:  0 10px;
+  }
+  .todo-add-btn {
+    font-weight: 700;
+    width: 80px;
+  }
+}

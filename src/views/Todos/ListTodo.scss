@@ -1,0 +1,34 @@
+.list-todo-container {
+  button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  input{
+    outline: none;
+  }
+  .list-todo-content {
+    margin: 30px auto 0;
+    max-width: 500px;
+
+    .todo-child {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      margin-top: 10px;
+      .editTodo-input{
+        height: 70%;
+        position: absolute;
+        left: 28px;
+        top: 0px;
+        font-size: 20px;
+      }
+      .todo-child-option {
+        .Edit {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
