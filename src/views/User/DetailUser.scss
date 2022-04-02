@@ -1,0 +1,43 @@
+.user-content{
+    text-align: center;
+    .user-detail{
+        span{
+            margin-right: 10px;
+            color: rgb(48, 207, 207);
+        }
+        margin: auto;    
+        text-align: left;
+        .user-name{
+            margin-left: 35%;
+
+        }
+        .user-email{
+            margin-left: 35%;
+
+        }
+        .user-img{
+            text-align: center;
+            margin-top: 20px;
+            img{
+                width: 200px;
+                border-radius: 8px;
+
+            }
+        }
+    }
+    .back-btn{
+        &:hover{
+            cursor: pointer;
+            opacity: 0.6;
+        }
+        margin-top: 30px;
+        width: 100px;
+        height: 50px;
+        background-color: rgb(89, 136, 136);
+        border: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+}

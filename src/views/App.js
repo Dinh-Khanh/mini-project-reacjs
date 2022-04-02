@@ -6,13 +6,14 @@ import "react-toastify/dist/ReactToastify.css";
 import Nav from "./Nav/Nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home/Home";
-
+import ListUser from "./User/ListUser";
+import DetailUser from "./User/DetailUser";
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <Nav/>
+          <Nav />
           <img src={logo} className="App-logo" alt="logo" />
           <p> APP OF DINH KHANH </p>
           <Switch>
@@ -21,6 +22,12 @@ function App() {
             </Route>
             <Route path="/todo">
               <ListTodo />
+            </Route>
+            <Route path="/user" exact>
+              <ListUser />
+            </Route>
+            <Route path="/user/:id">
+              <DetailUser />
             </Route>
           </Switch>
         </header>

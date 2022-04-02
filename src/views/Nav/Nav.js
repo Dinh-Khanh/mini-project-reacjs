@@ -7,10 +7,13 @@ class Nav extends React.Component {
     return (
       <div className="nav-header">
         <NavLink to="/" activeClassName="active-nav" exact>
-          Home
+          HOME
         </NavLink>
         <NavLink to="/todo" activeClassName="active-nav">
-          Todo
+          TODO
+        </NavLink>
+        <NavLink to="/user" activeClassName="active-nav">
+          USER
         </NavLink>
       </div>
     );
